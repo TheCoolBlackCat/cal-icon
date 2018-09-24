@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <style type="text/css">
+    div.cal {
+      margin: 10px;
+    }
+
+    .cal {
+      display: inline-block;
+      border: .1px solid #CCCAC5;
+      background-color: #FFF;
+      width: 250px;
+      /* height: 250px; */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      /* border-radius: 5px; */
+    }
+
+    .cal .month {
+      height: 50px;
+      line-height: 50px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      background-color: #E75951;
+      color: #FFF;
+    }
+
+    .cal .date {
+      font-size: 10rem;
+      color: #585858;
+      line-height: 175px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="cal">
+      <div class="month">January</div>
+      <div class="date">1</div>
+    </div>
+    <div class="cal">
+      <div class="month">February</div>
+      <div class="date">9</div>
+    </div>
+    <div class="cal">
+      <div class="month">March</div>
+      <div class="date">19</div>
+    </div>
+    <div class="cal">
+      <div class="month">April</div>
+      <div class="date">20</div>
+    </div>
+    <div class="cal">
+      <div class="month">May</div>
+      <div class="date">15</div>
+    </div>
+    <div class="cal">
+      <div class="month">June</div>
+      <div class="date">21</div>
+    </div>
+    <div class="cal">
+      <div class="month">July</div>
+      <div class="date">28</div>
+    </div>
+    <div class="cal">
+      <div class="month">August</div>
+      <div class="date">16</div>
+    </div>
+    <div class="cal">
+      <div class="month">September</div>
+      <div class="date">30</div>
+    </div>
+    <div class="cal">
+      <div class="month">October</div>
+      <div class="date">20</div>
+    </div>
+    <div class="cal">
+      <div class="month">November</div>
+      <div class="date">5</div>
+    </div>
+    <div class="cal">
+      <div class="month">December</div>
+      <div class="date">25</div>
+    </div>
+
+    <script type="text/javascript">
+    var dates = document.getElementsByClassName("date");
+    for (var i = 0; i < dates.length; i++)
+      dates[i].innerText = Math.floor(Math.random()*30)+1;
+    </script>
+  </body>
+</html>
