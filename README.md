@@ -1,4 +1,4 @@
-# cal-icon
+# Calendar Icon
 Basic styling to create calendar icons with pure HTML and CSS
 
 ## Usage
